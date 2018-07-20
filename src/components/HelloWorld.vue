@@ -37,7 +37,8 @@
                 <!-- CV En -->
               <div v-if="cvButton == 1&&langCV == 'en'">
                 <div style="margin-left:44px;margin-top:-64px">
-                Download my CV >> <a href="https://drive.google.com/open?id=1k0h7UfeioqXLHPJHMv84B-4XUAjqjBLH" class="button pure-button button-success"><span>Download</span></a>
+                Download my CV >> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1k0h7UfeioqXLHPJHMv84B-4XUAjqjBLH" class="button pure-button button-success"
+                @click="downloadCV()"><span>Download</span></a>
                 </div>
                 <table style="font-size:20px">
                  <tr height="25px" >
@@ -73,7 +74,8 @@
                 <!-- CV Th -->
               <div v-if="cvButton == 1&&langCV == 'th'">
                 <div style="margin-left:44px;margin-top:-64px">
-                Download my CV >> <a href="https://drive.google.com/open?id=1k0h7UfeioqXLHPJHMv84B-4XUAjqjBLH" class="button pure-button button-success"><span>Download</span></a>
+                Download my CV >> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1k0h7UfeioqXLHPJHMv84B-4XUAjqjBLH" class="button pure-button button-success"
+                @click="downloadCV()"><span>Download</span></a>
                 </div>
                 <table style="font-size:20px">
                  <tr height="25px" >
@@ -110,7 +112,8 @@
               <center>
               <div v-if="resumeButton == 1">
                 <div style="margin-top:-35px">
-                Download my resume >> <a href="https://drive.google.com/open?id=124TVwddDyGERnV1pCUzJr20aNuNVNtvI" class="button pure-button button-secondary"><span>Download</span></a>
+                Download my resume >> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=124TVwddDyGERnV1pCUzJr20aNuNVNtvI" class="button pure-button button-secondary"
+                @click="downloadResume()"><span>Download</span></a>
                 </div>
                 <img src="../assets/Chayanut Pasing Resume.png" width="990px" height="1400px">
                </div> 
@@ -120,7 +123,8 @@
               <div v-if="gradeButton == 1">
                 * These pictures are from official information technology system of my university <br>
                 * รูปภาพเหล่านี้นำมาจากเว็บไซต์ทางการของมหาวิทยาลัย <br>
-                Download my grade >> <a href="https://drive.google.com/open?id=1p4tF0qCyybBk60O_BY4LeGAL2YOIcbiG" class="button pure-button button-warning"><span>Download</span></a><br>
+                Download my grade >> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1p4tF0qCyybBk60O_BY4LeGAL2YOIcbiG" class="button pure-button button-warning" 
+                @click="downloadGrade()"><span>Download</span></a><br>
                 <img src="../assets/GradePNG_Page_1.png" width="1000px" height="1400px">
                 <img src="../assets/GradePNG_Page_2.png" width="1000px" height="1400px">
                 <img src="../assets/GradePNG_Page_3.png" width="1000px" height="1400px">
@@ -136,7 +140,7 @@
     
     <div v-if="firstClick == 0" style="margin-top: 20px">
       * Please click a button below to look what you want <b></b><br>
-      * คลิกปุ่มเพื่อดูสิ่งที่ท่านอยากดู <b>: )</b>
+      * คลิกปุ่มเพื่อดูสิ่งที่ท่านต้องการดู <b>: )</b>
     </div><br>
     <button v-if="firstClick == 0" class="button button-secondary pure-button" style="font-size: 28px;width: 210px" 
     @click="resumeClicked()">
@@ -308,28 +312,12 @@ export default {
       this.firstCome = 1
       }
     },
-    updateNumberOfViewer () {
-      dataRef.once("value", function(snapshot) {
-        snapshot.forEach(function(data) {
-          console.log(data.val())
-          var number = data.val() + 1
-          dataRef.set({
-            clickTimes: number
-           })
-        })
-      })
-    },
     changeLanguage(){
       if (this.langCV=='en') {
         this.langCV = 'th'
       }else{
         this.langCV = 'en'
       }
-    },
-    setData(number){
-      dataRef.set({
-        clickTimes: number
-      })
     }
   }
 }
