@@ -89,7 +89,7 @@
                       <td  valign="top" align="right">2014 - 2018 : </td>
                       <td>Bachelor of Technology, Major in Information Technology <br> from
 		                      King Mongkut’s University of Technology North Bangkok <br>
-		                      GPA 2.52 <p style="margin-bottom:-15px"></p>
+		                      GPA 2.53 <p style="margin-bottom:-15px"></p>
                       </td>
                     </tr>
                     <tr>
@@ -231,7 +231,7 @@
                       <td  valign="top" align="right" width="240px">ปีการศึกษา 2557 - 2560 : </td>
                       <td >ระดับปริญญาตรี สาขาวิชาเทคโนโลยีสารสนเทศ <br>แขนงวิชาเทคโนโลยีเครือข่าย   
 		                      คณะเทคโนโลยีและการจัดการอุตสาหกรรม <br>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ <br>
-		                      ด้วยเกรดเฉลี่ย 2.52 <p style="margin-bottom:-15px"></p>
+		                      ด้วยเกรดเฉลี่ย 2.53 <p style="margin-bottom:-15px"></p>
                       </td>
                     </tr>
                     <tr>
