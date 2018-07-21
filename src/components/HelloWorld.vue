@@ -361,7 +361,7 @@
       <button v-if="firstClick == 0" class="button button-warning pure-button" style="font-size: 28px;width: 190px" 
       @click="gradeClicked()">
       <span>My Grade</span></button>
-    <br><br><p style="font-size:12px">Powered by Chayanut Pasing</p>
+    <br><br><p style="font-size:12px">Developed by Chayanut Pasing</p>
   </div>
 </template>
 
