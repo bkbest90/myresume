@@ -158,16 +158,16 @@
                     <tr>
                       <td>
                         <br><b>Hobbies</b>
-                        <p style="text-indent:50px;margin-bottom:-15px;margin-top:5px">- Read Self-help books</p>
+                        <p style="text-indent:50px;margin-bottom:-15px;margin-top:5px">- Read self-help books</p>
                         <p style="text-indent:50px;margin-bottom:0px">- Listen to music and play guitar</p>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <br><b>Interest</b>
-                        <p style="text-indent:50px;margin-bottom:-15px;margin-top:5px">- How to Communicate With Others With Psychology based on Sincerity</p>
+                        <p style="text-indent:50px;margin-bottom:-15px;margin-top:5px">- How to communicate with others with psychology and sincerity</p>
                         <p style="text-indent:50px;margin-bottom:-15px">- Management and Marketing</p>
-                        <p style="text-indent:50px;margin-bottom:-15px">- Sport cars and Supercars</p>
+                        <p style="text-indent:50px;margin-bottom:-15px">- Sport cars and supercars</p>
                       </td>
                     </tr>
                   </table>
@@ -346,7 +346,6 @@
     </div>
     <br>
     <div v-if="firstClick == 0">Chayanut Pasing <br>ชยณัฐ ผาสิงห์ <br></div>
-    
     <div v-if="firstClick == 0" style="margin-top: 20px">
       * Please click a button below to look what you want <b></b><br>
       * คลิกปุ่มเพื่อดูสิ่งที่ท่านต้องการดู <b>: )</b>
