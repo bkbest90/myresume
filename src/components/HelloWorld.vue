@@ -2,8 +2,8 @@
   <div class="hello">
     {{firstComeSave()}}
     <h1 v-if="firstClick == 0" style="margin-top:-50px">{{ msg }}</h1>
-    <img v-if="firstClick == 0" src="../assets/BestP.png" width="250px" style="margin-top: -18px"><br>
-    <img v-if="firstClick == 0" class="imgLock" src="../assets/My signature.png" width="400px" style="margin-left: 40px;margin-top: -100px;margin-bottom: -110px">
+    <img v-if="firstClick == 0" src="../assets/BestP.png" width="200px" style="margin-top:0px"><br>
+    <img v-if="firstClick == 0" class="imgLock" src="../assets/My signature.png" width="250px" style="margin-left: 40px;margin-top: -75px;margin-bottom: -110px">
     <div v-if="firstClick != 0">
       <center>
         <table border="0" width="1000px" style="margin-top: -60px">
@@ -29,7 +29,7 @@
             </td>
           </tr>
           <tr valign="top">
-            <td v-if="cvButton == 1" width="210px"><br><img  src="../assets/BestP.png" width="190px" height="190px" style="margin-top: 60px"></td>
+            <td v-if="cvButton == 1" width="210px"><br><img  src="../assets/BestP.png" width="190px" height="190px" style="margin-top: 20px"></td>
             <td align="left">
               <br> <br>
               <!-- My CV -->
@@ -37,8 +37,8 @@
                 <!-- CV En --> 
               <div v-if="cvButton == 1&&langCV == 'en'">
                 <div style="margin-left:0px;margin-top:-64px">
-                Download my CV (.PDF) >> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1k0h7UfeioqXLHPJHMv84B-4XUAjqjBLH" class="button pure-button button-success"
-                @click="downloadCV()"><span>Download</span></a><hr>
+                <!-- Download my CV (.PDF) >> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1k0h7UfeioqXLHPJHMv84B-4XUAjqjBLH" class="button pure-button button-success"
+                @click="downloadCV()"><span>Download</span></a><hr> -->
                 </div>
                 <table style="font-size:20px">
                  <tr height="30px" >
@@ -80,22 +80,22 @@
                 </table>
                 <table border="0" style="font-size:20px;margin-left:-185px;margin-top:3px">
                   <tr height="30px" style="margin-bottom:9px"><td><b>Military status </b> : Finished Reserved Officers Training Corps Course <p style="margin-bottom:-10px"></p></td></tr>
-                  <tr height="30px"><td><b>Address</b> : 109/201 The Modish Moo 5 Kanchanaphisek Road, Lumpo, Bangbuathong, Nonthaburi 11110 </td></tr>
+                  <tr height="30px"><td><b>Address</b> : 481/694-6 Soi Charansanitwong, Khwang Bang khun si, Khet Bangkok noi, Bangkok 10700 </td></tr>
                   <table border="0">
                     <tr>
                       <td><br><b><p style="margin-top:-15px;margin-bottom:-15px">Education</p></b><br></td>
                     </tr>
                     <tr>
-                      <td  valign="top" align="right">2014 - 2018 : </td>
+                      <td  valign="top" align="right" >2014 - 2018 : </td>
                       <td>Bachelor of Technology, Major in Information Technology <br> from
 		                      King Mongkut’s University of Technology North Bangkok <br>
-		                      GPA 2.53 <p style="margin-bottom:-15px"></p>
+		                      GPA 2.53 <p style="margin-bottom:-5px"></p>
                       </td>
                     </tr>
                     <tr>
-                      <td  valign="top" align="right">2011 - 2013 : </td>
+                      <td  valign="top" align="right" >2011 - 2013 : </td>
                       <td>Senior High school, Science – mathematics from Huahin School <br>
-		                      GPA 2.38<p style="margin-bottom:-15px"></p>
+		                      GPA 2.38<p style="margin-bottom:-5px"></p>
                       </td>
                     </tr>
                     <tr>
@@ -122,7 +122,7 @@
                     </tr>
                     <tr>
                       <td><br><b><p style="margin-top:-15px"> Activities</p></b>
-                      <p style="text-indent:50px;margin-bottom:-15px;margin-top:-20px"> - IoT Seminar Assistant lecturer “Thailand 4.0 
+                      <p style="text-indent:50px;margin-bottom:-5px;margin-top:-20px"> - IoT Seminar Assistant lecturer “Thailand 4.0 
                         project” of King Mongkut’s University of Technology North Bangkok
                       </p>
                       <p style="text-indent:50px;margin-bottom:0px">- 24 Hours Hacking Hospital Services Development, to solve
@@ -132,15 +132,15 @@
                     </tr>
                     <tr>
                       <td><br><b>Skills</b>
-                      <p style="text-indent:50px;margin-bottom:-15px;margin-top:5px"> - Good Microsoft Office skill
+                      <p style="text-indent:50px;margin-bottom:-5px;margin-top:5px"> - Good Microsoft Office skill
                       </p>
-                      <p style="text-indent:50px;margin-bottom:-15px">- Very good computer skill
+                      <p style="text-indent:50px;margin-bottom:-5px">- Very good computer skill
                       </p>
-                      <p style="text-indent:50px;margin-bottom:-15px"> - Good programing and web coding skill
+                      <p style="text-indent:50px;margin-bottom:-5px"> - Good programing and web coding skill
                       </p>
-                      <p style="text-indent:50px;margin-bottom:-15px">- Basic Photoshop
+                      <p style="text-indent:50px;margin-bottom:-5px">- Basic Photoshop
                       </p>
-                      <p style="text-indent:50px;margin-bottom:-15px"> - Interpersonal skill with service mind
+                      <p style="text-indent:50px;margin-bottom:-5px"> - Interpersonal skill with service mind
                       </p>
                       <p style="text-indent:50px;margin-bottom:0px">- High sense of responsibility to handle multiple tasks
                       </p>
@@ -158,16 +158,16 @@
                     <tr>
                       <td>
                         <br><b>Hobbies</b>
-                        <p style="text-indent:50px;margin-bottom:-15px;margin-top:5px">- Read self-help books</p>
+                        <p style="text-indent:50px;margin-bottom:-5px;margin-top:5px">- Read self-help books</p>
                         <p style="text-indent:50px;margin-bottom:0px">- Listen to music and play guitar</p>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <br><b>Interest</b>
-                        <p style="text-indent:50px;margin-bottom:-15px;margin-top:5px">- How to communicate with others with psychology and sincerity</p>
-                        <p style="text-indent:50px;margin-bottom:-15px">- Management and Marketing</p>
-                        <p style="text-indent:50px;margin-bottom:-15px">- Sport cars and supercars</p>
+                        <p style="text-indent:50px;margin-bottom:-5px;margin-top:5px">- How to communicate with others with psychology and sincerity</p>
+                        <p style="text-indent:50px;margin-bottom:-5px">- Management and Marketing</p>
+                        <p style="text-indent:50px;margin-bottom:-5px">- Sport cars and supercars</p>
                       </td>
                     </tr>
                   </table>
@@ -176,8 +176,8 @@
                 <!-- CV Th -->
               <div v-if="cvButton == 1&&langCV == 'th'">
                 <div style="margin-left:0px;margin-top:-64px">
-                Download my CV (.PDF) >> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1k0h7UfeioqXLHPJHMv84B-4XUAjqjBLH" class="button pure-button button-success"
-                @click="downloadCV()"><span>Download</span></a> <hr>
+                <!-- Download my CV (.PDF) >> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1k0h7UfeioqXLHPJHMv84B-4XUAjqjBLH" class="button pure-button button-success"
+                @click="downloadCV()"><span>Download</span></a> <hr> -->
                 </div>
                 <table style="font-size:20px">
                  <tr height="30px" >
@@ -221,8 +221,7 @@
                   <tr height="30px" style="margin-bottom:9px"><td><b>สถานภาพทางการทหาร</b> 
                   : สำเร็จหลักสูตรรักษาดินแดน
                   <p style="margin-bottom:-10px"></p></td></tr>
-                  <tr height="30px"><td><b>ที่อยู่</b> : 109/201 The Modish หมู่ 5 ถนนกาญจนาภิเษก ตำบลลำโพ
-                  อำเภอบางบัวทอง จังหวัดนนทบุรี 11110 </td></tr>
+                  <tr height="30px"><td><b>ที่อยู่</b> : 481/649-6 ซอยจรัญสนิทวงศ์ 37 ถนนจรัญสนิทวงศ์ แขวงบางขุนศรี เขตบางกอกน้อย กรุงเทพมหานคร 10700 </td></tr>
                   <table border="0">
                     <tr>
                       <td><br><b><p style="margin-top:-15px;margin-bottom:-15px">ประวัติการศึกษา</p></b><br></td>
@@ -231,19 +230,19 @@
                       <td  valign="top" align="right" width="240px">ปีการศึกษา 2557 - 2560 : </td>
                       <td >ระดับปริญญาตรี สาขาวิชาเทคโนโลยีสารสนเทศ <br>แขนงวิชาเทคโนโลยีเครือข่าย   
 		                      คณะเทคโนโลยีและการจัดการอุตสาหกรรม <br>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ <br>
-		                      ด้วยเกรดเฉลี่ย 2.53 <p style="margin-bottom:-15px"></p>
+		                      ด้วยเกรดเฉลี่ย 2.53 <p style="margin-bottom:-5px"></p>
                       </td>
                     </tr>
                     <tr>
                       <td  valign="top" align="right">ปีการศึกษา 2554 - 2556 : </td>
                       <td>ระดับมัธยมศึกษาตอนปลาย สายวิทย์ - คณิต โรงเรียนหัวหิน <br>
-		                      ด้วยเกรดเฉลี่ย 2.38<p style="margin-bottom:-15px"></p>
+		                      ด้วยเกรดเฉลี่ย 2.38<p style="margin-bottom:-5px"></p>
                       </td>
                     </tr>
                     <tr>
                       <td  valign="top" align="right">ปีการศึกษา 2551 - 2553 : </td>
                       <td>ระดับมัธยมศึกษาตอนต้น สายวิทย์ - คณิต โรงเรียนหัวหิน <br>
-		                      ด้วยเกรดเฉลี่ย 2.92<p style="margin-bottom:-15px"></p>
+		                      ด้วยเกรดเฉลี่ย 2.92<p style="margin-bottom:-5px"></p>
                       </td>
                     </tr>
                     <tr>
@@ -266,7 +265,7 @@
                     </tr>
                     <tr>
                       <td><br><b><p style="margin-top:-15px"> กิจกรรมระหว่างเรียน</p></b>
-                      <p style="text-indent:50px;margin-bottom:-15px;margin-top:-20px"> - ผู้ช่วยวิทยากร โครงการอบรมเชิงปฏิบัติการเรื่อง “พัฒนาศักยภาพทุนมนุษย์เพื่อก้าวไปสู่ 
+                      <p style="text-indent:50px;margin-bottom:-5px;margin-top:-20px"> - ผู้ช่วยวิทยากร โครงการอบรมเชิงปฏิบัติการเรื่อง “พัฒนาศักยภาพทุนมนุษย์เพื่อก้าวไปสู่ 
                         Thailand 4.0” ของทางมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ 6 ครั้ง
                       </p>
                       <p style="text-indent:50px;margin-bottom:0px">- เข้าร่วมกิจกรรม 24 Hours Hacking Hospital Services Development เพื่อคิดหาทางแก้ไขปัญหาต่าง
@@ -276,16 +275,16 @@
                     </tr>
                     <tr>
                       <td><br><b>ทักษะ</b>
-                      <p style="text-indent:50px;margin-bottom:-15px;margin-top:5px"> - มีทักษะการใช้ Microsoft Office ได้ดี
+                      <p style="text-indent:50px;margin-bottom:-5px;margin-top:5px"> - มีทักษะการใช้ Microsoft Office ได้ดี
                       </p>
-                      <p style="text-indent:50px;margin-bottom:-15px">- มีทักษะการใช้คอมพิวเตอร์ดีเยี่ยม
+                      <p style="text-indent:50px;margin-bottom:-5px">- มีทักษะการใช้คอมพิวเตอร์ดีเยี่ยม
                       </p>
-                      <p style="text-indent:50px;margin-bottom:-15px"> - มีทักษะการเขียนโปรแกรม เว็บไซต์ปานกลาง
+                      <p style="text-indent:50px;margin-bottom:-5px"> - มีทักษะการเขียนโปรแกรม เว็บไซต์ปานกลาง
                       </p>
-                      <p style="text-indent:50px;margin-bottom:-15px">- มีทักษะการใช้ Photoshop ขั้นพื้นฐาน
+                      <p style="text-indent:50px;margin-bottom:-5px">- มีทักษะการใช้ Photoshop ขั้นพื้นฐาน
                       </p>
-                      <p style="text-indent:50px;margin-bottom:-15px" > - มีมนุษย์สัมพันธ์ดี พูดอย่างมีเชิงและหลักการบวกกับจิตวิทยาเล็กน้อยบนพื้นฐานของความจริงใจ </p> 
-                      <p style="text-indent:50px;margin-left:13px;margin-bottom:-15px">เข้ากับคนอื่นได้ง่าย</p>
+                      <p style="text-indent:50px;margin-bottom:-5px" > - มีมนุษย์สัมพันธ์ดี พูดอย่างมีเชิงและหลักการบวกกับจิตวิทยาเล็กน้อยบนพื้นฐานของความจริงใจ </p> 
+                      <p style="text-indent:50px;margin-left:13px;margin-bottom:-5px">เข้ากับคนอื่นได้ง่าย</p>
                       <p style="text-indent:50px;margin-bottom:0px">- มีความรับผิดชอบสูงในการจัดการงานต่าง ๆ
                       </p>
                       </td>
@@ -302,16 +301,16 @@
                     <tr>
                       <td>
                         <br><b>งานอดิเรก</b>
-                        <p style="text-indent:50px;margin-bottom:-15px;margin-top:5px">- อ่านหนังสือแนวจิตวิทยาพัฒนาตนเอง การทำงานเป็นทีม</p>
+                        <p style="text-indent:50px;margin-bottom:-5px;margin-top:5px">- อ่านหนังสือแนวจิตวิทยาพัฒนาตนเอง การทำงานเป็นทีม</p>
                         <p style="text-indent:50px;margin-bottom:0px">- ฟังเพลงสากลและเล่นกีตาร์</p>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <br><b>สิ่งที่สนใจ</b>
-                        <p style="text-indent:50px;margin-bottom:-15px;margin-top:5px">- การพูด การฟัง และการเข้าหาผู้อื่นโดยใช้หลักการจิตวิทยาบนพื้นฐานของความจริงใจ</p>
-                        <p style="text-indent:50px;margin-bottom:-15px">- การบริหาร การตลาด</p>
-                        <p style="text-indent:50px;margin-bottom:-15px">- รถสปอร์ต รถยนต์ Supercars</p>
+                        <p style="text-indent:50px;margin-bottom:-5px;margin-top:5px">- การพูด การฟัง และการเข้าหาผู้อื่นโดยใช้หลักการจิตวิทยาบนพื้นฐานของความจริงใจ</p>
+                        <p style="text-indent:50px;margin-bottom:-5px">- การบริหาร การตลาด</p>
+                        <p style="text-indent:50px;margin-bottom:-5px">- รถสปอร์ต รถยนต์ Supercars</p>
                       </td>
                     </tr>
                   </table>
@@ -321,8 +320,8 @@
               <center>
               <div v-if="resumeButton == 1">
                 <div style="margin-top:-35px">
-                Download my resume (.PDF or .PNG) >> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=124TVwddDyGERnV1pCUzJr20aNuNVNtvI" class="button pure-button button-secondary"
-                @click="downloadResume()"><span>Download</span></a>
+                <!-- Download my resume (.PDF or .PNG) >> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/124TVwddDyGERnV1pCUzJr20aNuNVNtvI?usp=sharing" class="button pure-button button-secondary"
+                @click="downloadResume()"><span>Download</span></a> -->
                 </div>
                 <img src="../assets/Chayanut Pasing Resume.png" width="990px" height="1400px">
                </div> 
@@ -332,8 +331,8 @@
               <div v-if="gradeButton == 1">
                 * These pictures are from official information technology system of my university <br>
                 * รูปภาพเหล่านี้นำมาจากเว็บไซต์ทางการของมหาวิทยาลัย <br>
-                Download my grade (.PDF or .PNG) >> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1p4tF0qCyybBk60O_BY4LeGAL2YOIcbiG" class="button pure-button button-warning" 
-                @click="downloadGrade()"><span>Download</span></a><br>
+                <!-- Download my grade (.PDF or .PNG) >> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1p4tF0qCyybBk60O_BY4LeGAL2YOIcbiG" class="button pure-button button-warning" 
+                @click="downloadGrade()"><span>Download</span></a><br> -->
                 <img src="../assets/GradePNG_Page_1.png" width="1100px" height="1400px">
                 <img src="../assets/GradePNG_Page_2.png" width="1100px" height="1400px">
                 <img src="../assets/GradePNG_Page_3.png" width="1100px" height="1400px">
@@ -345,8 +344,8 @@
       </center>
     </div>
     <br>
-    <div v-if="firstClick == 0">Chayanut Pasing <br>ชยณัฐ ผาสิงห์ <br></div>
-    <div v-if="firstClick == 0" style="margin-top: 20px">
+    <div v-if="firstClick == 0" style="margin-top: 29px">Chayanut Pasing <br>ชยณัฐ ผาสิงห์ <br></div>
+    <div v-if="firstClick == 0" style="margin-top: 10px">
       * Please click a button below to look what you want <b></b><br>
       * คลิกปุ่มเพื่อดูสิ่งที่ท่านต้องการดู <b>: )</b>
     </div><br>
@@ -360,7 +359,56 @@
       <button v-if="firstClick == 0" class="button button-warning pure-button" style="font-size: 28px;width: 190px" 
       @click="gradeClicked()">
       <span>My Grade</span></button>
-    <br><br><p style="font-size:12px">Developed by Chayanut Pasing</p>
+      <h1 v-if="firstClick == 0">ผลงานของผม | My art work</h1>
+    <div v-if="firstClick == 0" style="margin-top:20px" id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner" >
+        <center>
+        <div class="carousel-item active ">
+          <img class="d-block" src="../assets/1.jpg" width="60%" height="auto">
+        </div>
+        <div class="carousel-item ">
+          <img class="d-block " src="../assets/2.jpg" width="60%" height="auto">
+        </div>
+        <div class="carousel-item ">
+          <img class="d-block " src="../assets/3.jpg"  width="60%" height="auto">
+        </div>
+        <div class="carousel-item ">
+          <img class="d-block " src="../assets/4.jpg"  width="60%" height="auto">
+        </div>
+        <div class="carousel-item ">
+          <img class="d-block " src="../assets/5.jpg"  width="60%" height="auto">
+        </div>
+        <div class="carousel-item ">
+          <img class="d-block " src="../assets/6.jpg"  width="60%" height="auto">
+        </div>
+        <div class="carousel-item ">
+          <img class="d-block " src="../assets/7.jpg"  width="60%" height="auto">
+        </div>
+        <div class="carousel-item ">
+          <img class="d-block " src="../assets/8.jpg"  width="60%" height="auto">
+        </div>
+        </center>
+      </div>
+      <a style="margin-left:17%" class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a style="margin-right:17%" class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <ol style="bottom:0px;" class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="color:black"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2" ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3" ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4" ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5" ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6" ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7" ></li>
+      </ol>
+    </div>
+        <br><br><p style="font-size:12px">Developed by Chayanut Pasing</p>
   </div>
 </template>
 
